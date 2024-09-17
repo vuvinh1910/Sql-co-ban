@@ -10,3 +10,7 @@ MODIFY id   varchar(255) PRIMARY KEY;  -- id từ int thêm ràng buộc primary
 ALTER TABLE my_table
 ADD UNIQUE (id); -- cách này thì không sửa được kiểu dữ liệu của id  
 
+-- xóa khóa chính:
+ALTER TABLE my_table:
+DROP PRIMARY key;
+
