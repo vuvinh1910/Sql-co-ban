@@ -1,7 +1,7 @@
 CREATE TABLE levinh.my_table (
   id int NOT NULL, -- đảm bảo không nhận giá trị null
   id2 int CHECK (id2 >= 18),  -- đảm bảo giá trị trong cột thỏa mãn tính chất cụ thể
-  id3 int DEFAULT 0  -- trả về giá trị default = 0 nếu trong cột không có giá trị chỉ định
+  id3 varchar(255) DEFAULT 'Hanoi'  -- trả về giá trị default = 0 nếu trong cột không có giá trị chỉ định
 );
 -- thêm ràng buộc bằng 2 cách:
 ALTER TABLE my_table
