@@ -6,6 +6,10 @@ VALUES (giatri1, giatri2, giatri3, ...);
 INSERT INTO sinhvien (id, ho, ten, tuoi)
 VALUES (1, 'Nguyen', 'An', 20);
 
+-- Nếu bạn chèn vào tất cả các cột của bảng theo đúng thứ tự của bảng, bạn có thể bỏ qua phần danh sách cột:
+INSERT INTO sinhvien
+VALUES (5, 'Pham', 'Hung', 23);
+
 -- chèn nhiều hàng:
 INSERT INTO sinhvien (id, ho, ten, tuoi)
 VALUES
