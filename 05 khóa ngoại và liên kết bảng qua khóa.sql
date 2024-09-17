@@ -5,6 +5,8 @@ CREATE TABLE SinhVien (
     ten VARCHAR(50),
     tuoi INT
 );
+
+
 -- tạo bảng LopHoc có id_sinhvien là khóa ngoại liên kết với khóa chính id trong bảng sinhvien  
 CREATE TABLE LopHoc (
     id INT PRIMARY KEY,             -- Khóa chính của bảng LopHoc
@@ -14,6 +16,11 @@ CREATE TABLE LopHoc (
     ON DELETE CASCADE              -- Xóa sinh viên sẽ xóa luôn bản ghi tương ứng trong LopHoc
     ON UPDATE CASCADE              -- Khi cập nhật id trong SinhVien, LopHoc cũng cập nhật theo
 );
+-- hoặc nếu lúc đầu bảng chưa có khóa ngoại liên kết, ta có thể thêm vào như sau:
+ALTER TABLE LopHoc
+ADD FOREIGN KEY (id_sinhvien) REFERENCES SinhVien(id) 
+ON DELETE CASCADE
+ON UPDATE CASCADE;
 
 -- quan trọng đây là tham chiếu, nên giá trị khóa chính và khóa ngoại muốn liên kết phải giống nhau
 -- vd: 
