@@ -20,3 +20,7 @@ WHERE ten LIKE '%Van%';
 -- tìm tất cả các sinh viên có tên gồm đúng 4 ký tự, với ký tự đầu tiên là "A" và ký tự thứ ba là "C":
 SELECT * FROM SinhVien
 WHERE ten LIKE 'A_C_';
+
+-- tìm tất cả sinh viên có chữ cái r ở vị trí thứ 2:
+SELECT * FROM SinhVien
+WHERE ten LIKE '_r%';
