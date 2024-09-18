@@ -20,7 +20,9 @@ ORDER BY tuoi DESC
 LIMIT 5; -- Lệnh này sẽ trả về 5 sinh viên có tuổi lớn nhất.
 
 -- Bạn có thể sử dụng DISTINCT để loại bỏ các bản ghi trùng lặp:
-SELECT DISTINCT ten_lop
+SELECT DISTINCT ten_lop -- các tên lớp sẽ không bị trùng.
+FROM LopHoc;
+SELECT COUNT (DISTINCT ten_lop) -- in ra số lớp ko trùng lặp.
 FROM LopHoc;
 
 
