@@ -21,3 +21,8 @@ WHERE column_name BETWEEN value1 AND value2;
   WHERE tuoi BETWEEN 18 AND 25
   AND diem_trung_binh > 7;
 
+  -- tìm các sinh viên dựa theo tên ta dùng thêm order by để sắp xếp lại thì betwween mới chuẩn:
+  SELECT * FROM SinhVien
+  WHERE tuoi BETWEEN "anh" AND "vinh"
+  ORDER BY tuoi;
+
