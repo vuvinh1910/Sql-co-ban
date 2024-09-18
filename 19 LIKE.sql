@@ -13,7 +13,7 @@ WHERE ten LIKE 'Nguyen%';
 SELECT * FROM SinhVien
 WHERE ten LIKE '%A';
 
--- Tìm tất cả các sinh viên có tên chứa "Van":
+-- Tìm tất cả các sinh viên có tên chứa "Van" kể cả ở đầu và cuối:
 SELECT * FROM SinhVien
 WHERE ten LIKE '%Van%';
 
