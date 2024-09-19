@@ -8,10 +8,18 @@ FROM table2;
 -- giống như add trong set, các dữ liệu trùng nhau thì không thêm, các dữ liệu khác nhau thì thêm.
 -- vd: 1,2,3 union 2,3,4 thì = 1,2,3,4.
 
-
 -- đây là set họ tên của 2 bảng dai hoc và cao đẳng.
 SELECT ho, ten
 FROM SinhVien_DaiHoc
 UNION
 SELECT ho, ten
 FROM SinhVien_CaoDang;
+
+
+-- nếu không muốn loại bỏ giá trị trùng lặp thì ta dùng UNION ALL:
+SELECT ho, ten
+FROM SinhVien_DaiHoc
+UNION ALL
+SELECT ho, ten
+FROM SinhVien_CaoDang
+ORDER BY ten ASC;
