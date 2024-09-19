@@ -5,4 +5,7 @@ IFNULL (expression, replacement);
   --vd: 
 SELECT 100*IFNULL(SINHVIEN_Id,1)
 
+-- ISNULL GIỐNG IFNULL
+CHỈ KHÁC ISNULL PHÙ HỢP SQL SERVER
+
 
