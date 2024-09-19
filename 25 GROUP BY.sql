@@ -13,9 +13,9 @@ ORDER BY column1, column2;
   GROUP BY id_lop;
   -- Kết quả:
   id_lop	average_age
-  101	    20.33
-  102	    22
-  103	    23
+  101	      20.33
+  102	      22
+  103	      23
 
   -- NHÓM SỐ LƯỢNG SINH VIÊN THEO LỚP:
   SELECT id_lop, COUNT(*) 
@@ -23,6 +23,6 @@ ORDER BY column1, column2;
   GROUP BY id_lop;
   -- Kết quả:
   id_lop	so_sinh_vien
-  101	    3
-  102	    1
-  103	    1
+  101	      3
+  102	      1
+  103	      1
