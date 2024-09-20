@@ -1,0 +1,1 @@
+vì nvarchar lưu đc các ký tự có dấu còn varchar thì không.
