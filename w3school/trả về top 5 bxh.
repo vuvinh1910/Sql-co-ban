@@ -1,0 +1,2 @@
+SELECT TOP 5 * FROM Customers;
+-- chỉ ra 5 người đứng đầu trong danh sách
