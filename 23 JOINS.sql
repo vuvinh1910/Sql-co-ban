@@ -17,15 +17,10 @@ FROM table1
 CROSS JOIN table2;
 
 -- SELF JOIN: Là một dạng đặc biệt của JOIN, trong đó một bảng tự kết hợp với chính nó.
-SELECT n1.ten AS ten_nhan_vien, n2.ten AS ten_quan_ly
-FROM NhanVien n1
-LEFT JOIN NhanVien n2
-ON n1.id_nguoi_quan_ly = n2.id;
--- HOẶC:
--- chọn ngưởi trong bảng nhân viên khác họ tên và sống cùng thành phố  
-FROM NhanVien A, NhanVien B
-WHERE A.ho_ten <> B.ho_ten
-AND A.City = B.City;
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City 
 
 
 -- quan hệ nhiều - nhiều dùng bảng order trung gian
