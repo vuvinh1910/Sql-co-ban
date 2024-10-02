@@ -13,6 +13,10 @@ WHERE ten LIKE 'Nguyen%';
 SELECT * FROM SinhVien
 WHERE ten LIKE '%A';
 
+-- sinh viên không chứa chữ cái cuối là A  
+SELECT * FROM SinhVien
+WHERE ten NOT LIKE '%A';
+
 -- Tìm tất cả các sinh viên có tên chứa "Van" kể cả ở đầu và cuối:
 SELECT * FROM SinhVien
 WHERE ten LIKE '%Van%';
