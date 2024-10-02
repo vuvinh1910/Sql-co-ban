@@ -26,3 +26,12 @@ ON n1.id_nguoi_quan_ly = n2.id;
 FROM NhanVien A, NhanVien B
 WHERE A.ho_ten <> B.ho_ten
 AND A.City = B.City;
+
+
+-- quan hệ nhiều - nhiều dùng bảng order trung gian
+-- Customers - Orders: Quan hệ 1-Nhiều (1 khách hàng có thể có nhiều đơn hàng).
+-- Shippers - Orders: Quan hệ 1-Nhiều (1 đơn vị vận chuyển có thể vận chuyển nhiều đơn hàng).
+SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID;
