@@ -24,3 +24,7 @@ WHERE ten LIKE 'A_C_';
 -- tìm tất cả sinh viên có chữ cái r ở vị trí thứ 2:
 SELECT * FROM SinhVien
 WHERE ten LIKE '_r%';
+
+-- Trả lại tất cả khách hàng bắt đầu bằng "b" và kết thúc bằng "s":
+SELECT * FROM Customers
+WHERE CustomerName LIKE 'b%s';
