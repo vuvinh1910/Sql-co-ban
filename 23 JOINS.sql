@@ -21,7 +21,7 @@ SELECT n1.ten AS ten_nhan_vien, n2.ten AS ten_quan_ly
 FROM NhanVien n1
 LEFT JOIN NhanVien n2
 ON n1.id_nguoi_quan_ly = n2.id;
-- HOẶC:
+-- HOẶC:
 -- chọn ngưởi trong bảng nhân viên khác họ tên và sống cùng thành phố  
 FROM NhanVien A, NhanVien B
 WHERE A.ho_ten <> B.ho_ten
